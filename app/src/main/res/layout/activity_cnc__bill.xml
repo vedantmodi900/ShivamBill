@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".cnc_Bill">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgLogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:contentDescription="@string/Front_img_tableview"
+                    android:src="@drawable/shivam_logo"/>
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/outer_border"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+                <TableRow
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+                    <TextView
+                        android:text="SL NO  :  "
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/txtcolor"/>
+                    <EditText
+                        android:hint="Enter Sl No "
+                        android:background="@null"/>
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+                <TableRow
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+                    <TextView
+                        android:text="COMPANY NAME  :  "
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/txtcolor"/>
+                    <EditText
+                        android:hint="Enter Company Name "
+                        android:background="@null"/>
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+                <TableRow
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+                    <TextView
+                        android:text="CONTACT PERSON  :  "
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/txtcolor"/>
+                    <EditText
+                        android:hint="Contact Person"
+                        android:background="@null"/>
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+                <TableRow
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+                    <TextView
+                        android:text="CITY  :  "
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/txtcolor"/>
+                    <EditText
+                        android:hint="Enter City "
+                        android:background="@null"/>
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+                <TableRow
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+                    <TextView
+                        android:text="STREET  :  "
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/txtcolor"/>
+                    <EditText
+                        android:hint="Enter Street "
+                        android:background="@null"/>
+                </TableRow>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+                <TableRow
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+                    <TextView
+                        android:text="DESPATCH DATE  :  "
+                        android:textStyle="bold"
+                        android:padding="5dp"
+                        android:textColor="@color/txtcolor"/>
+                    <TextView
+                        android:id="@+id/Date"
+                        android:hint="Select Date"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
