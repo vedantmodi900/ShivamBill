@@ -124,7 +124,7 @@
                     android:paddingTop="6dp"
                     android:paddingBottom="6dp">
                     <TextView
-                        android:text="DESPATCH DATE  :  "
+                        android:text="Dummy Date:  "
                         android:textStyle="bold"
                         android:padding="5dp"
                         android:textColor="@color/txtcolor"/>
